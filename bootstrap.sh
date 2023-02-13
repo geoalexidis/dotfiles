@@ -53,7 +53,8 @@ whatsapp \
 signal \
 spotify-now-playing \
 alacritty \
-rectangle
+rectangle \
+obsidian
 
 # dotfiles and symlinks
 cd

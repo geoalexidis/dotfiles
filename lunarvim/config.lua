@@ -193,3 +193,8 @@ local map = vim.api.nvim_set_keymap
 map('n', '<C-n>', ':set nu!<cr>:set rnu!<cr>', { noremap = true })
 --  local set rnu
 vim.api.nvim_command('set rnu')
+lvim.builtin.lualine.on_config_done = function()
+  vim.cmd [[
+  highlight LineNr guifg=#aaaaaa
+]]
+end

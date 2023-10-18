@@ -10,6 +10,7 @@ export PATH=/opt/homebrew/bin:$PATH
 export PATH=/home/$USER/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -60,7 +61,6 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/gpg-agent
   zgen oh-my-zsh plugins/jsontools
   zgen oh-my-zsh plugins/jump
-  # zgen oh-my-zsh plugins/laravel
   zgen oh-my-zsh plugins/lxd
   zgen oh-my-zsh plugins/nmap
   zgen oh-my-zsh plugins/node
@@ -121,10 +121,23 @@ alias use="xrdb merge"
 alias lv=lvim
 alias gs="g status"
 alias gcm="g commit -m"
+alias gpl="g pull"
+alias gco="g checkout"
+alias gcob="g checkout -b"
+alias gr="g rebase"
 
 eval $(thefuck --alias)
+
+#autojump
+[[ -s /Users/gk/.autojump/etc/profile.d/autojump.sh ]] && source /Users/gk/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
 
 # pnpm
 export PNPM_HOME="/home/lgg/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
+# golang
+export PATH="/usr/local/go/bin/:$PATH"
+

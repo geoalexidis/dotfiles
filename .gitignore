@@ -1,1 +1,7 @@
 *gignore*
+
+docker-compose.local.yml
+
+/.idea
+/conf-test
+_config/

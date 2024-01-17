@@ -5,3 +5,5 @@ docker-compose.local.yml
 /.idea
 /conf-test
 _config/
+
+/cypress/downloads/downloads.html

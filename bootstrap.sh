@@ -40,7 +40,8 @@ wget \
 glow \
 thefuck \
 pidof \
-tig
+tig \
+zoxide
 
 brew install --cask discord \
 tradingview \
